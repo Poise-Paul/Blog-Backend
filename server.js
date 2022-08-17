@@ -33,8 +33,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", async (req, res) => {
-  const result = await Blog.find();
-  res.send(result);
+  // const result = await Blog.find();
+  res.send("Hello Users");
 });
 
 app.post("/", upload, async (req, res) => {
